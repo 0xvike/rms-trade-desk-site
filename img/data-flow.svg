@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 626" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
 <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2a2115"/></marker></defs>
 <rect width="1100" height="626" fill="#f4ead2"/>
-<text x="30" y="40" font-size="24" font-weight="800" fill="#8a5f0a">RMS Trade Desk: data flow (all on the member&apos;s own computer)</text>
+<text x="30" y="40" font-size="24" font-weight="800" fill="#8a5f0a">CEF Automation: data flow (all on the member&apos;s own computer)</text>
 <rect x="20" y="62" width="1060" height="436" rx="14" fill="none" stroke="#b8860b" stroke-width="3" stroke-dasharray="10 6"/>
 <text x="40" y="86" font-size="15" font-weight="700" fill="#8a5f0a">The member's own computer. Account data, orders and tokens stay on it.</text>
 <g stroke="#2a2115" stroke-width="2" fill="#e4d5b2">
@@ -11,7 +11,7 @@
 </g>
 <g fill="#2a2115" font-size="16" text-anchor="middle">
 <text x="135" y="158" font-weight="800">Member</text><text x="135" y="180">own browser tab</text><text x="135" y="199">127.0.0.1 only</text>
-<text x="450" y="126" font-weight="800" fill="#8a5f0a">RMS Trade Desk (127.0.0.1)</text>
+<text x="450" y="126" font-weight="800" fill="#8a5f0a">CEF Automation (127.0.0.1)</text>
 <text x="450" y="162" font-weight="700">1 Lots, rules, tickets</text><text x="450" y="182" font-size="14">member's own rules</text>
 <text x="450" y="232" font-weight="700">2 Preview checks</text><text x="450" y="252" font-size="14">floor, lot, caps, fresh quote, cash</text>
 <text x="450" y="302" font-weight="700">3 Member confirms</text><text x="450" y="322" font-size="14">one click, one limit order</text>
