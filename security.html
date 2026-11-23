@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Security | RMS Trade Desk</title><meta name="description" content="How RMS Trade Desk protects your keys and accounts: everything stays on your computer, encrypted, with an audit log and rate limits."><link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 32 32' aria-hidden='true' width='34' height='34'%3E%3Crect width='32' height='32' rx='7' fill='%23d9a21f'/%3E%3Cpath d='M8 9v13h6M14 22l3-6 3 3 5-8' fill='none' stroke='%232a1c02' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"><style>
+:root{--bg:#f4ead2;--card:#fbf4e1;--line:#d9c79b;--ink:#2a2115;--mute:#5a4a2f;--gold:#8a5f0a;--gold2:#b8860b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+a{color:#7a4f00}
+header{background:#e4d5b2;border-bottom:3px solid var(--gold2)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--gold);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;padding:4px 2px;border-bottom:3px solid transparent}
+nav a:hover,nav a.on{border-bottom-color:var(--gold2)}
+h1,h2,h3{color:var(--gold);line-height:1.2;margin:0 0 12px}
+h1{font-size:clamp(32px,5vw,48px)}h2{font-size:28px;margin-top:44px}h3{font-size:21px;margin-top:26px}
+.hero{padding:48px 0 24px}.lead{font-size:22px;max-width:760px}
+.pill{display:inline-block;border:1px solid var(--gold2);background:#f3dfa0;border-radius:99px;padding:3px 14px;font-size:15px;font-weight:700;margin:0 6px 8px 0}
+.pill.b{background:#dfe9f6;border-color:#2f5fa8;color:#1d4585}
+.pill.r{background:#f6d9d6;border-color:#a8261c;color:#8f1d15}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:20px 0}
+.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold2);border-radius:10px;padding:18px 20px}
+.card h3{margin-top:0}
+figure{margin:24px 0}figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;display:block}
+figcaption{font-size:16px;color:var(--mute);margin-top:6px}
+.note{background:#f3dfa0;border:1px solid var(--gold2);border-radius:10px;padding:14px 18px;margin:22px 0}
+ol.steps{counter-reset:s;list-style:none;padding:0}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px 14px 60px;margin:10px 0;position:relative}
+ol.steps li:before{content:counter(s);position:absolute;left:16px;top:12px;width:32px;height:32px;border-radius:50%;background:var(--gold2);color:#fff;font-weight:800;text-align:center;line-height:32px}
+table{border-collapse:collapse;width:100%;background:var(--card);margin:16px 0}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:#e4d5b2;color:var(--gold)}
+footer{margin-top:64px;border-top:3px solid var(--gold2);background:#e4d5b2;padding:24px 0;font-size:16px;color:var(--mute)}
+footer a{margin-right:16px}
+.btn{display:inline-block;background:var(--gold2);color:#fff;font-weight:700;text-decoration:none;padding:10px 20px;border-radius:8px}
+@media(max-width:600px){body{font-size:17px}.hero{padding-top:28px}}
+</style></head><body>
+<header><div class="wrap bar"><a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" width="34" height="34"><rect width="32" height="32" rx="7" fill="#d9a21f"/><path d="M8 9v13h6M14 22l3-6 3 3 5-8" fill="none" stroke="#2a1c02" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>RMS Trade Desk</a><nav><a href="index.html">Home</a><a href="how-it-works.html">How It Works</a><a href="security.html" class=on>Security</a><a href="brokers.html">Brokers</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav></div></header>
+<main class="wrap">
+<section class="hero"><h1>Security</h1><p class="lead">The program runs on your computer. Your keys and account data stay there. We never receive them.</p></section>
+<div class="grid">
+<div class="card"><h3>Keys stay with you</h3><p>Your broker keys and sign-in tokens are stored on your own computer. On Windows they are encrypted with Windows DPAPI, tied to your own Windows account. After you enter a key, only its last 4 characters are ever shown.</p></div>
+<div class="card"><h3>Never sent to us</h3><p>Keys, secrets, tokens and sign-in codes are stripped from the Activity Log, backups and problem reports. We cannot see your computer and have no access to it.</p></div>
+<div class="card"><h3>Schwab sign in by OAuth</h3><p>You sign in on Schwab's own page and press Allow. We never see your Schwab password. The sign in lasts 7 days. The program warns you 2 days before it ends and stops plainly when it does.</p></div>
+<div class="card"><h3>Local only</h3><p>The program listens on 127.0.0.1 only and refuses any other address. Every request carries a random token made fresh at each start. No outside website or script is loaded.</p></div>
+<div class="card"><h3>Audit log</h3><p>The Activity Log records every refresh, scan, ticket, edit, preview, order, cancel and setting change. You can export it.</p></div>
+<div class="card"><h3>Rate limits</h3><p>Order requests and all other requests are each held under 100 in any 60 seconds, below the limit Schwab reports. Quotes are sent in batches. If a broker says slow down, the program waits and tells you.</p></div></div>
+<h2>The sign-in helper</h2>
+<p>The Schwab app secret cannot be placed on every member's computer. For the one click Connect with Schwab option, a small web helper of ours holds that secret. It does only the sign-in exchange and the refresh. It passes tokens back sealed so that only your own computer can open them, stores nothing, logs no tokens and accepts no calls from web pages. No order, account or position data ever passes through it.</p>
+<p>If you prefer, use your own Schwab developer key instead. Then the helper is not used at all.</p>
+<h2>No unattended trading</h2>
+<p>The program never places an order without your confirmation. There is no auto mode. If we ever propose one, it will be announced first and be off by default.</p>
+<figure><img src="img/13-troubleshooting-health.jpg" alt="The Troubleshooting page runs a plain English health check. Demo data." loading="lazy" width="1440" height="900"><figcaption>The Troubleshooting page runs a plain English health check. Demo data.</figcaption></figure>
+<p>Found a security problem? Email <a href="mailto:support@cefcomplete.com">support@cefcomplete.com</a> with the subject RMS Trade Desk security.</p></main>
+<footer><div class="wrap"><p><a href="index.html">Home</a><a href="how-it-works.html">How It Works</a><a href="security.html">Security</a><a href="brokers.html">Brokers</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></p><p>RMS Trade Desk is operated by Matt Weaver (sole proprietor). It is not investment advice, and it is not affiliated with, endorsed by or approved by Charles Schwab, E*TRADE or Fidelity. The Schwab connection is pending Schwab approval. Updated November 23, 2026.</p></div></footer></body></html>

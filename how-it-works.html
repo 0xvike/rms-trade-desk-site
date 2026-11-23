@@ -1,0 +1,60 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>How It Works | RMS Trade Desk</title><meta name="description" content="How RMS Trade Desk turns your rules into tickets that you confirm, and how data flows between your computer and your broker."><link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 32 32' aria-hidden='true' width='34' height='34'%3E%3Crect width='32' height='32' rx='7' fill='%23d9a21f'/%3E%3Cpath d='M8 9v13h6M14 22l3-6 3 3 5-8' fill='none' stroke='%232a1c02' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"><style>
+:root{--bg:#f4ead2;--card:#fbf4e1;--line:#d9c79b;--ink:#2a2115;--mute:#5a4a2f;--gold:#8a5f0a;--gold2:#b8860b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+a{color:#7a4f00}
+header{background:#e4d5b2;border-bottom:3px solid var(--gold2)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--gold);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;padding:4px 2px;border-bottom:3px solid transparent}
+nav a:hover,nav a.on{border-bottom-color:var(--gold2)}
+h1,h2,h3{color:var(--gold);line-height:1.2;margin:0 0 12px}
+h1{font-size:clamp(32px,5vw,48px)}h2{font-size:28px;margin-top:44px}h3{font-size:21px;margin-top:26px}
+.hero{padding:48px 0 24px}.lead{font-size:22px;max-width:760px}
+.pill{display:inline-block;border:1px solid var(--gold2);background:#f3dfa0;border-radius:99px;padding:3px 14px;font-size:15px;font-weight:700;margin:0 6px 8px 0}
+.pill.b{background:#dfe9f6;border-color:#2f5fa8;color:#1d4585}
+.pill.r{background:#f6d9d6;border-color:#a8261c;color:#8f1d15}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:20px 0}
+.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold2);border-radius:10px;padding:18px 20px}
+.card h3{margin-top:0}
+figure{margin:24px 0}figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;display:block}
+figcaption{font-size:16px;color:var(--mute);margin-top:6px}
+.note{background:#f3dfa0;border:1px solid var(--gold2);border-radius:10px;padding:14px 18px;margin:22px 0}
+ol.steps{counter-reset:s;list-style:none;padding:0}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px 14px 60px;margin:10px 0;position:relative}
+ol.steps li:before{content:counter(s);position:absolute;left:16px;top:12px;width:32px;height:32px;border-radius:50%;background:var(--gold2);color:#fff;font-weight:800;text-align:center;line-height:32px}
+table{border-collapse:collapse;width:100%;background:var(--card);margin:16px 0}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:#e4d5b2;color:var(--gold)}
+footer{margin-top:64px;border-top:3px solid var(--gold2);background:#e4d5b2;padding:24px 0;font-size:16px;color:var(--mute)}
+footer a{margin-right:16px}
+.btn{display:inline-block;background:var(--gold2);color:#fff;font-weight:700;text-decoration:none;padding:10px 20px;border-radius:8px}
+@media(max-width:600px){body{font-size:17px}.hero{padding-top:28px}}
+</style></head><body>
+<header><div class="wrap bar"><a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" width="34" height="34"><rect width="32" height="32" rx="7" fill="#d9a21f"/><path d="M8 9v13h6M14 22l3-6 3 3 5-8" fill="none" stroke="#2a1c02" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>RMS Trade Desk</a><nav><a href="index.html">Home</a><a href="how-it-works.html" class=on>How It Works</a><a href="security.html">Security</a><a href="brokers.html">Brokers</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav></div></header>
+<main class="wrap">
+<section class="hero"><h1>How It Works</h1><p class="lead">You set the rules. The program prepares tickets. You confirm each one. Every step is logged.</p></section>
+<h2>The member confirmed order flow</h2>
+<ol class="steps">
+<li><strong>You set the rules.</strong> Minimum gain, profit floor, fee buffer and daily limits are yours.</li>
+<li><strong>The program finds lots.</strong> Semi-Auto finds lots that meet your rules. A buy scan finds funds that meet your buy criteria. Each match becomes a pending ticket: account, ticker, shares, limit price, which lot and the profit floor. A ticket is only a proposal. You can also create one by hand.</li>
+<li><strong>You preview.</strong> The program reads a fresh quote and checks the lot, the profit floor, cash and reserve for buys, and the daily buy limits.</li>
+<li><strong>You confirm.</strong> A box shows the order in words: side, shares, ticker, limit, account and estimated amount. You press Yes, place it.</li>
+<li><strong>One limit order is sent.</strong> One click per order. There is no approve all.</li>
+<li><strong>Everything is logged.</strong> Each refresh, scan, ticket, edit, preview, order, cancel and setting change goes in the Activity Log.</li></ol>
+<figure><img src="img/02-sell-ticket-dialog.jpg" alt="Sell ticket with the exact lot, floor-protected limit and gain. Demo data." loading="lazy" width="1440" height="900"><figcaption>Sell ticket with the exact lot, floor-protected limit and gain. Demo data.</figcaption></figure>
+<h2>Safeguards on every order</h2>
+<div class="grid">
+<div class="card"><h3>Practice mode</h3><p>The default. Tickets are logged as would place and nothing goes to a broker.</p></div>
+<div class="card"><h3>Kill switch</h3><p>One click stops previews and orders. While it is on, nothing is sent.</p></div>
+<div class="card"><h3>No unattended trading</h3><p>There is no automatic order placement. Every order needs your confirmation.</p></div>
+<div class="card"><h3>Lot must be named</h3><p>A sell is blocked if the exact lot is unknown. The program never guesses a lot.</p></div>
+<div class="card"><h3>Profit floor</h3><p>The limit is priced from a fresh quote and is never below your floor unless you explicitly confirm.</p></div>
+<div class="card"><h3>Duplicate and cap guards</h3><p>Working orders are checked before a send. Daily buy order and dollar caps apply to every buy.</p></div></div>
+<h2>Data flow</h2>
+<p>Everything inside the dashed box happens on your own computer. Calls to your broker go straight from your computer to the broker. Nothing about your orders, accounts or positions passes through us.</p>
+<figure><img src="img/data-flow.svg" alt="Diagram: your computer runs RMS Trade Desk at 127.0.0.1, talks directly to Schwab sign in, the Schwab Trader API and market data. A small sign-in helper holds only the app secret." width="1100" height="626"><figcaption>Data flow. The sign-in helper holds only the app secret and stores nothing.</figcaption></figure>
+<figure><img src="img/09-settings-schwab-a-or-b.jpg" alt="Two ways to connect Schwab: connect with Schwab, or use your own key. Test build, no real account." loading="lazy" width="1440" height="900"><figcaption>Two ways to connect Schwab: connect with Schwab, or use your own key. Test build, no real account.</figcaption></figure></main>
+<footer><div class="wrap"><p><a href="index.html">Home</a><a href="how-it-works.html">How It Works</a><a href="security.html">Security</a><a href="brokers.html">Brokers</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></p><p>RMS Trade Desk is operated by Matt Weaver (sole proprietor). It is not investment advice, and it is not affiliated with, endorsed by or approved by Charles Schwab, E*TRADE or Fidelity. The Schwab connection is pending Schwab approval. Updated November 23, 2026.</p></div></footer></body></html>

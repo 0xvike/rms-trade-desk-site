@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 626" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2a2115"/></marker></defs>
+<rect width="1100" height="626" fill="#f4ead2"/>
+<text x="30" y="40" font-size="24" font-weight="800" fill="#8a5f0a">RMS Trade Desk: data flow (all on the member&apos;s own computer)</text>
+<rect x="20" y="62" width="1060" height="436" rx="14" fill="none" stroke="#b8860b" stroke-width="3" stroke-dasharray="10 6"/>
+<text x="40" y="86" font-size="15" font-weight="700" fill="#8a5f0a">The member's own computer. Account data, orders and tokens stay on it.</text>
+<g stroke="#2a2115" stroke-width="2" fill="#e4d5b2">
+<rect x="40" y="120" width="190" height="96" rx="10"/><rect x="300" y="104" width="300" height="388" rx="10" fill="#f4ead2" stroke="#b8860b" stroke-width="3"/>
+<rect x="320" y="136" width="260" height="58" rx="8"/><rect x="320" y="206" width="260" height="58" rx="8"/><rect x="320" y="276" width="260" height="58" rx="8"/><rect x="320" y="346" width="260" height="58" rx="8"/><rect x="320" y="416" width="260" height="58" rx="8"/>
+<rect x="40" y="320" width="190" height="96" rx="10"/><rect x="800" y="120" width="260" height="96" rx="10"/><rect x="800" y="262" width="260" height="96" rx="10"/><rect x="800" y="404" width="260" height="70" rx="10" fill="#efe2bf"/>
+</g>
+<g fill="#2a2115" font-size="16" text-anchor="middle">
+<text x="135" y="158" font-weight="800">Member</text><text x="135" y="180">own browser tab</text><text x="135" y="199">127.0.0.1 only</text>
+<text x="450" y="126" font-weight="800" fill="#8a5f0a">RMS Trade Desk (127.0.0.1)</text>
+<text x="450" y="162" font-weight="700">1 Lots, rules, tickets</text><text x="450" y="182" font-size="14">member's own rules</text>
+<text x="450" y="232" font-weight="700">2 Preview checks</text><text x="450" y="252" font-size="14">floor, lot, caps, fresh quote, cash</text>
+<text x="450" y="302" font-weight="700">3 Member confirms</text><text x="450" y="322" font-size="14">one click, one limit order</text>
+<text x="450" y="372" font-weight="700">4 Kill switch + dry-run</text><text x="450" y="392" font-size="14">locked ON until approved</text>
+<text x="450" y="442" font-weight="700">5 Rate limiter + audit log</text><text x="450" y="462" font-size="14">under 120 a minute, every step logged</text>
+<text x="135" y="358" font-weight="800">Local key store</text><text x="135" y="380">tokens (and own key, B)</text><text x="135" y="399" font-size="14">write-only, last 4 shown</text>
+<text x="930" y="158" font-weight="800">Schwab sign in (3 legged)</text><text x="930" y="180">the member types the password</text><text x="930" y="199" font-size="14">at Schwab only</text>
+<text x="930" y="300" font-weight="800">Schwab Trader API</text><text x="930" y="322">accounts, positions, history</text><text x="930" y="341" font-size="14">limit orders after confirm</text>
+<text x="930" y="436" font-weight="800">Schwab market data</text><text x="930" y="458">bid, ask, last (batched)</text>
+</g>
+<g stroke="#2a2115" stroke-width="2.4" fill="none" marker-end="url(#a)">
+<path d="M230 168 H300"/><path d="M230 368 H300"/><path d="M600 168 H800"/><path d="M600 308 H800"/><path d="M600 440 H800"/>
+</g>
+<g fill="#5a4a2f" font-size="13"><text x="700" y="156" text-anchor="middle">HTTPS, from this computer</text><text x="700" y="296" text-anchor="middle">HTTPS, 100 a minute max</text><text x="700" y="428" text-anchor="middle">HTTPS, batched quotes</text></g>
+<g stroke="#2a2115" stroke-width="2" fill="#efe2bf"><rect x="300" y="526" width="300" height="70" rx="10" stroke-dasharray="7 5"/><rect x="800" y="526" width="260" height="70" rx="10"/></g>
+<g fill="#2a2115" font-size="16" text-anchor="middle"><text x="450" y="556" font-weight="800">Sign-in helper (ours, option A)</text><text x="450" y="577" font-size="14">holds the app secret; stores nothing</text>
+<text x="930" y="556" font-weight="800">Schwab OAuth</text><text x="930" y="577" font-size="14">code and refresh, with the secret</text></g>
+<g stroke="#2a2115" stroke-width="2.4" fill="none" marker-end="url(#a)"><path d="M450 498 V526"/><path d="M600 561 H800"/></g>
+<g fill="#5a4a2f" font-size="13"><text x="466" y="516">start, refresh (tokens return sealed, to this computer only)</text><text x="700" y="553" text-anchor="middle">HTTPS</text></g>
+<text x="30" y="616" font-size="14" fill="#5a4a2f">A: the helper keeps the app secret and passes tokens only to the member's own computer. B: the member's own key, no helper. Same flow, same safeguards.</text>
+</svg>
