@@ -1,0 +1,12 @@
+name: Keep demo awake
+# Pings the public practice demo so Render's free plan never puts it to sleep (it sleeps after 15 idle minutes).
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch: {}
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - run: curl -fsS --max-time 90 -o /dev/null -w "%{http_code}\n" https://cef-automation-demo.onrender.com/healthz || true
